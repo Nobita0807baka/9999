@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入 CSS 文件 -->
+</head>
+<body>
+    <h1>Citation Generator</h1>
+    <form>
+        <label for="author">作者：</label>
+        <input type="text" id="author" required><br>
+        <label for="year">年代：</label>
+        <input type="text" id="year" required><br>
+        <label for="title">〈篇名〉：</label>
+        <input type="text" id="title" required><br>
+        <label for="journal">《報刊名稱》：</label>
+        <input type="text" id="journal" required><br>
+        <label for="date">月日：</label>
+        <input type="text" id="date" required><br>
+        <label for="edition">版次：</label>
+        <input type="text" id="edition" required><br>
+        <button type="button" onclick="generateCitation()">生成引用</button>
+    </form>
+    <div id="citation"></div> <!-- 顯示引用的區域 -->
+    <script src="script.js"></script> <!-- 引入 JavaScript 文件 -->
+</body>
+</html>
